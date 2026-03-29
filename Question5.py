@@ -6,6 +6,7 @@ def most_common_word(story: tuple[str, ...]) -> str:
     word_count = {}
     for line in story:
         for word in line.split():
+            word = word.lower()
             word_count[word] = word_count.get(word, 0) + 1
     most_common = max(word_count, key=word_count.get)
     print(f"The word: {most_common}\nappears {word_count[most_common]} times.")
