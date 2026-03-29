@@ -1,3 +1,4 @@
+"""get 10 grades (dont count invalid) and print the average grade and highest grade"""
 list1 = []
 count = 0
 while count != 10:
